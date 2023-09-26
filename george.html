@@ -7,24 +7,79 @@
     <meta name="email" content="emanuef@algonquincollege.com">
     <meta name="date" content="2023-09-19">
     <title>George the WebPage</title>
+
+    <style>
+        p {
+            background-color: aquamarine;
+            color: black;
+        }
+
+        .newpara {
+
+            & .bigger {
+
+                /* nesting is new */
+
+                color: green;
+            }
+
+            border-color: blue;
+            border-style: dashed;
+            border-width: 2px;
+            padding: 23px 10px;
+            padding-left: 40px;
+
+        }
+
+        p .bigger {
+
+            background-color: blueviolet;
+        }
+
+        .newpara::first-line {
+            
+            text-align: center;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .accentpara {
+            border-color: red;
+        }
+
+        .accentpara:hover {
+
+            background-color: orange;
+        }
+
+        .bigger {
+
+            font-size: x-large;
+        }
+    </style>
 </head>
 <body>
     <header>George the WebPage</header>
     <img src="images/Frank2020.jpg" 
          alt="a picture of Frank" width="100">
     <section>
+
         <p class="newpara">
-            <h1></h1>
+            Title <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit quod veniam quam dignissimos, ab similique, aspernatur animi labore saepe soluta eligendi commodi. <span class="bigger">Officia</span> laudantium dicta molestias perferendis provident est.
         </p>
         <p class="newpara">
-            <h1></h1>
+            Title <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ratione, molestias harum quasi perspiciatis iste temporibus facere aliquid quaerat saepe. Veritatis deleniti distinctio non voluptate eius aliquam, quis alias dolores?
         </p>
         <p class="newpara">
-            <h1></h1>
+            Title <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, ex exercitationem laborum fugit nihil obcaecati quaerat eaque, dolorem mollitia soluta vel alias cumque error magni quisquam consequuntur excepturi voluptatibus omnis?
         </p>
-        <p class="newpara">
-            <h1></h1>
-        </p>
+        <div class="newpara accentpara">
+            Title <br>
+            Lorem ipsum dolor, sit <span class="bigger">amet</span> consectetur adipisicing elit. Beatae quibusdam deleniti dolorum. Maiores accusamus commodi obcaecati repudiandae, culpa assumenda repellat optio, impedit deleniti iusto iste iure veritatis quos tenetur qui.
+        </div>
     </section>
 </body>
 </html>
