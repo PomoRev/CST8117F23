@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prof. Frank Emanuel">
+    <meta name="email" content="emanuef@algonquincollege.com">
+    <meta name="date" content="2023-10-03">
+    <title>floating</title>
+    <style>
+
+        header {
+
+            text-align: center;
+            font-size: 16pt;
+            font-weight: bold;
+
+        }
+
+        .box {
+
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            background-color: blue;
+            border: solid black 2px;
+            font-size: 14pt;
+            float: left;
+            color: whitesmoke;
+            line-height: 200px;
+            text-align: center;
+
+        }
+
+        .clearfix::after {
+
+            content: "";
+            display: block;
+            clear: both;
+
+        }
+
+        p {
+
+            font-size: 20pt;
+
+        }
+    </style>
+</head>
+<body>
+    <header>floating</header>
+
+    <div class="box">
+        Here be the stuff.
+    </div>
+
+    <p class="clearfix">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Eaque dignissimos, odio hic itaque suscipit, nisi, quis 
+        sunt esse similique sequi reprehenderit magni corrupti 
+        doloribus eveniet tempora accusamus error? Quia, 
+        reprehenderit.
+    </p>
+
+    <p>
+        hello world.
+    </p>
+</body>
+</html>
