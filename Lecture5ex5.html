@@ -5,7 +5,7 @@
 		<STYLE>
 			.gridcontainer {
 				display: grid;
-				grid-template-columns : 0.5fr 2fr 2fr;
+				grid-template-columns : 20% 40% 40%;
 			}
 			
 			H1 {
@@ -14,6 +14,7 @@
 				margin : 0;
 				padding : 1em;
 				grid-area: 1/1/2/4; 
+				text-align: center;
 			}
 			
 			NAV {
@@ -24,7 +25,8 @@
 			.navigation {
 				display: flex;
 				flex-direction: column;
-				justify-content: space-evenly;
+				justify-content: flex-start;
+				gap: 20px;
 			}
 			
 			.content {
@@ -35,7 +37,9 @@
 			.image {
 				float: right;
 				justify-self : center;
-				width : 400px;
+				height: 200px;
+				margin: 10px;
+				margin-right: 0;
 			}
 			
 			FOOTER {
@@ -56,13 +60,15 @@
 	<BODY>
 		<DIV class="gridcontainer">
 			<H1>Signs of the End Zombie Apocalypse RPG</H1>
+			
 			<NAV class="navigation">
 				<BUTTON>Button 1</BUTTON>
 				<BUTTON>Button 2</BUTTON>
 				<BUTTON>Button 3</BUTTON>
 			</NAV>
-			<IMG src="images/signs.jpg" alt="" class="image">
+
 			<DIV class="content">
+				<IMG src="images/signs.jpg" alt="" class="image">
 				<P>One of the interesting features of ADHD is the ability to hyper focus on things you really enjoy or find interesting. That is how I managed to pull together one lecture, one RPG campaign setting, and a collaborative fiction blog all in a few days (plus I ran two other RPG nights and we had a really nice social evening with friends in there too).</P>
 
 				<P>Last week I showed up at my friend Richard's place for some gaming. We have an ongoing Call of Cthulhu campaign that meets bi-weekly. This was our off week actually but Richard wanted to try out a new role playing game (RPG) system called the one roll engine (ORE). This is the system used for the game GODLIKE which is a WWII super heroes game. That group is big on historical contexts - we play Call of Cthulhu in 1920s Alymer and the GM puts a lot of work into the historical details. Richard wanted to try the NEMESIS version of ORE which is meant for horror genre role playing - we re-ran one of our Cthulhu scenarios with the system.</P>
