@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prof. Frank Emanuel">
+    <meta name="email" content="emanuef@algonquincollege.com">
+    <meta name="date" content="2023-11-14">
+    <title>Formity Form</title>
+    <script>
+        function ready(){
+
+            // using a flag to validate multiple elements
+            // innocent (true) until found guilty (false) 
+
+            returnflag = true;
+
+            if ( theiremail.value == "" ){
+
+                // give them feedback
+
+                returnflag = false;
+
+                emailinput.innerHTML = emailinput.innerHTML + " <-- yikes!";
+
+            }
+
+            if ( theirname.value == "" ){
+
+                console.log( "inside code ");
+
+                returnflag = false;
+                theirname.style.backgroundColor = 'red';
+                
+            } else {
+
+                theirname.style.backgroundColor = 'white';
+                theirname.value = theirname.value.toUpperCase();
+            
+            }
+
+            return ( returnflag );
+
+        }
+    </script>
+</head>
+<body>
+    <header>Formity Form</header>
+
+    <form action="" method="get" onsubmit="return ready();">
+
+        name: <input type="text" name="myname" id="theirname"><br>
+        
+        <p id="emailinput">
+            email: 
+            <input type="email" name="myemail" id="theiremail">
+        </p>
+
+        colour: <input type="color" name="mycolour" id="favcolour"><br>
+
+        <button type="submit">Ready?</button>
+
+    </form>
+</body>
+</html>
