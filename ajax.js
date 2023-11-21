@@ -14,7 +14,7 @@ function getWeather(){
     
     request.open('GET', targetURL);
     
-    request.onload= function() {
+    request.onload = function() {
 
         let weatherData = JSON.parse(this.responseText);
 
