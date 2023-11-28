@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prof. Frank Emanuel">
+    <meta name="email" content="emanuef@algonquincollege.com">
+    <meta name="date" content="2023-11-27">
+    <title>Rotation Demonstration</title>
+
+    <style>
+        header, div {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 24pt;
+            font-weight: bolder;
+            
+            text-align: center;
+            color: darkslategrey;
+
+            padding: 12pt;
+        }
+
+        body {
+            background-color: azure;   
+        }
+
+        div {
+            font-weight: bold;
+            color: lightgreen;
+        }
+
+        #circle {
+            width: 200px;
+            height: 200px;
+            background: darkviolet;
+            border-radius: 50%;
+            line-height: 200px;
+
+            position: absolute;
+            left: 250px;
+            top: 240px;
+
+            animation: pathway 10s linear infinite;
+
+        }
+
+@keyframes pathway {
+	from { 	transform: rotate(0deg) translateX(150px); }
+	to   {  transform: rotate(360deg) translateX(150px); }
+}   
+
+
+    </style>
+</head>
+<body lang="en">
+    <header>Rotation Demonstration</header>
+    <div id="circle">Focus</div>
+</body>
+</html>
